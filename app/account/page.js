@@ -1,6 +1,19 @@
+'use client'; // Add this line at the top
+
 import Link from 'next/link';
+import { useState } from 'react'; // Import useState if you plan to add more client-side logic
 
 export default function AccountPage() {
+    const handleEditProfileClick = () => {
+        console.log('Edit Profile Clicked');
+        // Add your edit profile logic here
+    };
+
+    const handleChangePasswordClick = () => {
+        console.log('Change Password Clicked');
+        // Add your change password logic here
+    };
+
     return (
         <div className="min-h-screen bg-gray-900 text-white p-6 md:p-10 flex flex-col items-center">
             <div className="max-w-4xl w-full bg-gray-800 rounded-lg shadow-xl p-8 md:p-10 mt-10">
@@ -18,8 +31,8 @@ export default function AccountPage() {
                                 type="text"
                                 id="name"
                                 className="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
-                                value="John Doe" // Placeholder value
-                                readOnly // For now, make it read-only
+                                value="John Doe"
+                                readOnly
                             />
                         </div>
                         <div>
@@ -30,15 +43,15 @@ export default function AccountPage() {
                                 type="email"
                                 id="email"
                                 className="shadow appearance-none border border-gray-700 rounded w-full py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-700"
-                                value="john.doe@example.com" // Placeholder value
-                                readOnly // For now, make it read-only
+                                value="john.doe@example.com"
+                                readOnly
                             />
                         </div>
                     </div>
                     <div className="mt-6 text-right">
                         <button
                             className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200 ease-in-out"
-                            onClick={() => console.log('Edit Profile Clicked')} // Placeholder action
+                            onClick={handleEditProfileClick} // Using the defined function
                         >
                             Edit Profile
                         </button>
@@ -86,7 +99,7 @@ export default function AccountPage() {
                     <div className="mt-6 text-right">
                         <button
                             className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-200 ease-in-out"
-                            onClick={() => console.log('Change Password Clicked')} // Placeholder action
+                            onClick={handleChangePasswordClick} // Using the defined function
                         >
                             Change Password
                         </button>
