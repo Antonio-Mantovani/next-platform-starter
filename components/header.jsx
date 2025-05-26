@@ -10,8 +10,6 @@ const navItems = [
     { linkText: 'Account', href: '/account' }, 
     { linkText: 'Workflow', href: '/workflow' }, 
     { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
     { linkText: 'Blobs', href: '/blobs' },
     { linkText: 'Classics', href: '/classics' }
 ];
