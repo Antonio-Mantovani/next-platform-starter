@@ -9,9 +9,6 @@ const navItems = [
     { linkText: 'Pricing', href: '/billing' }, 
     { linkText: 'Account', href: '/account' }, 
     { linkText: 'Workflow', href: '/workflow' }, 
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' }
 ];
 
 export function Header() {
